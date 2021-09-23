@@ -1,0 +1,94 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "image": "http://ubiq.co.nz/media/cache/sylius_medium/49/b6/d79c42d5b0c6b53513073e1534a3.jpeg",
+      "author_firstName": "Suzanne",
+      "author_lastName": "Collins",
+      "book_title": "The Hunger Games",
+      "book_description": "The Hunger Games are an annual televised event where tribues fight each other to the death.",
+      "price":"$7.98",
+      "publisher": "Ebert-Murphy"
+    },
+    {
+      "id": 2,
+      "image": "http://projectfandom.wpengine.com/wp-content/uploads/2013/11/Catching-Fire-poster.jpg",
+      "author_firstName": "Suzanne",
+      "author_lastName": "Collins",
+      "book_title": "Catching Fire",
+      "book_description": "Winners of the Hunger Games have to fight in the Hunger Games once again.",
+      "price": "$3.47",
+      "publisher": "Denesik LLC"
+    },
+    {
+      "id": 3,
+      "image": "https://assets.thalia.media/img/artikel/eb4381bda0f7ac3b94bb33e5fc4f4042bdc33479-00-00.jpeg",
+      "author_firstName": "M.L.",
+      "author_lastName": "Rio",
+      "book_title": "If We Were Villains",
+      "book_description": "7 Friends at theater school. One of them dies, all of them hide the truth.",
+      "price": "$8.25",
+      "publisher": "Wunsch Group"
+    },
+    {
+      "id": 4,
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/eb/The_goldfinch_by_donna_tart.png",
+      "author_firstName": "Donna",
+      "author_lastName": "Tartt",
+      "book_title": "The Goldfinch",
+      "book_description": "posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut",
+      "price": "$2.35",
+      "publisher": "Ward-Skiles"
+    },
+    {
+      "id": 5,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81a4kCNuH+L.jpg",
+      "author_firstName": "John",
+      "author_lastName": "Green",
+      "book_title": "The Fault In Our Stars",
+      "book_description": "luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum",
+      "price": "$9.84",
+      "publisher": "Jaskolski-Ferry"
+    },
+    {
+      "id": 6,
+      "image": "https://m.media-amazon.com/images/I/41Yb0G32bcL.jpg",
+      "author_firstName": "John",
+      "author_lastName": "Green",
+      "book_title": "Looking For Alaska",
+      "book_description": "quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem",
+      "price": "$0.79",
+      "publisher": "Moen-McCullough"
+    },
+    {
+      "id": 7,
+      "image": "https://target.scene7.com/is/image/Target/GUEST_62a17653-38e8-4f55-af6b-8a4eba0e85ce?wid=488&hei=488&fmt=pjpeg",
+      "author_firstName": "Jennifer",
+      "author_lastName": "Niven",
+      "book_title": "All The Bright Places",
+      "book_description": "augue luctus tincidunt nulla mollis molestie lorem quisque ut erat",
+      "price": "$2.28",
+      "publisher": "Emmerich LLC"
+    },
+    {
+      "id": 8,
+      "image": "https://images.booksense.com/images/015/193/9789389193015.jpg",
+      "author_firstName": "Oscar",
+      "author_lastName": "Wilde",
+      "book_title": "The Picture of Dorian Gray",
+      "book_description": "eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed",
+      "price": "$7.93",
+      "publisher": "Volkman and Sons"
+    },
+    {
+      "id": 9,
+      "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630501681l/6185._SY475_.jpg",
+      "author_firstName": "Emily",
+      "author_lastName": "Brontë",
+      "book_title": "Wuthering Heights",
+      "book_description": "aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet",
+      "price": "$6.98",
+      "publisher": "Kautzer, Medhurst and Lang"
+    }
+  ]
+}
