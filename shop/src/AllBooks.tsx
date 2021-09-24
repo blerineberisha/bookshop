@@ -3,8 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Book from "./Book";
 import "./App.css";
 import Footer from "./Footer";
+import { BookService } from "./BookService";
 
-function AllBooks() {
+export default function AllBooks() {
   type Book = {
     id: number;
     image: string;
@@ -17,18 +18,14 @@ function AllBooks() {
   };
   const [books, setBook] = useState<Book[]>([]);
 
+
   useEffect(() => {
-    fetch("http://localhost:3001/books")
-      .then((resolve) => {
-        return resolve.json();
-      })
-      .then((book) => {
-        setBook(book);
-      })
-      .catch(() => {
-        console.log("unexpected error");
-      });
+    const bookService = new BookService;
+    bookService.getAllBooks().then((res) => {
+      setBook(res.data)
+    })
   }, [books]);
+
   return (
     <div className="allbooks">
       <Container>
@@ -57,5 +54,3 @@ function AllBooks() {
     </div>
   );
 }
-
-export default AllBooks;
