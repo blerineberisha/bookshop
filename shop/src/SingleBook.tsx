@@ -4,22 +4,17 @@ import { BookType } from "./Book";
 import { useParams } from "react-router-dom";
 import "./App.css";
 import Footer from "./Footer";
+import { BookService } from "./BookService";
 
 export const SingleBook = () => {
   const { id } = useParams<{ id: string }>();
   const [book, setBook] = useState<BookType>({} as BookType);
 
   useEffect(() => {
-    fetch("http://localhost:3001/books/" + id)
-      .then((resolve) => {
-        return resolve.json();
-      })
-      .then((res) => {
-        setBook(res);
-      })
-      .catch(() => {
-        console.log("unexpected error");
-      });
+    const bookService = new BookService();
+    bookService.getBookByID(id).then((res) => {
+      setBook(res.data);
+    })
   }, [id]);
 
   return (

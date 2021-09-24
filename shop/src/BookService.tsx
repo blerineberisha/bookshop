@@ -7,7 +7,7 @@ export class BookService{
         return this.client.get("")
     };
 
-    getBookByID(id: number){
+    getBookByID(id: string){
         return this.client.get("" + id)
     };
 }

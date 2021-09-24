@@ -20,9 +20,9 @@ export default function AllBooks() {
 
 
   useEffect(() => {
-    const bookService = new BookService;
+    const bookService = new BookService();
     bookService.getAllBooks().then((res) => {
-      setBook(res.data)
+      setBook(res.data);
     })
   }, [books]);
 
