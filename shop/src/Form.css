@@ -1,0 +1,31 @@
+.body{
+    background-color: #c6927a;
+    padding: 5%;
+}
+
+legend{
+    text-align: center;
+
+}
+fieldset{
+    border-radius: 25px;
+    border: solid black 2px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E9C1A7;
+}
+
+.field{
+width: 75%;
+}
+
+Form{
+    display: block;
+    text-align: center;
+}
+
+label{
+    padding-top: 5%;
+}
+

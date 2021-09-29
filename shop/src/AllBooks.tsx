@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Book from "./Book";
+import Book, { BookType } from "./Book";
 import "./App.css";
-import Footer from "./Footer";
+import { SearchContext } from "./SearchContext";
 
 function AllBooks() {
   type Book = {
@@ -16,6 +16,7 @@ function AllBooks() {
     publisher: string;
   };
   const [books, setBook] = useState<Book[]>([]);
+  const { search } = useContext(SearchContext);
 
   useEffect(() => {
     fetch("http://localhost:3001/books")
@@ -34,26 +35,33 @@ function AllBooks() {
       <Container>
         <Row>
           <div className="card-group">
-            {books.map((bookInfo: Book) => {
-              return (
-                <Col md={4}>
-                  <Book
-                    id={bookInfo.id}
-                    image={bookInfo.image}
-                    book_title={bookInfo.book_title}
-                    author_firstName={bookInfo.author_firstName}
-                    author_lastName={bookInfo.author_lastName}
-                    book_description={bookInfo.book_description}
-                    price={bookInfo.price}
-                    publisher={bookInfo.publisher}
-                  />
-                </Col>
-              );
-            })}
+            {books
+              .filter((book) => {
+                return (
+                  book.book_title.toLowerCase().includes(search) ||
+                  !search ||
+                  book.price.toLowerCase().includes(search)
+                );
+              })
+              .map((book: BookType) => {
+                return (
+                  <Col md={4}>
+                    <Book
+                      id={book.id}
+                      image={book.image}
+                      book_title={book.book_title}
+                      book_description={book.book_description}
+                      price={book.price}
+                      author_firstName={book.author_firstName}
+                      author_lastName={book.author_lastName}
+                      publisher={book.publisher}
+                    />
+                  </Col>
+                );
+              })}
           </div>
         </Row>
       </Container>
-      <Footer></Footer>
     </div>
   );
 }
