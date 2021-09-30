@@ -63,5 +63,10 @@ label {
 
 .inputLabel{
 	text-align: left;
-	margin-left: 13%;
+	margin-left: 15%;
 }
+
+input:placeholder-shown {
+	font-style: italic;
+	color: black;
+  }
