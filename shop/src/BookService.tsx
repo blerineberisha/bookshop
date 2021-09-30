@@ -10,6 +10,10 @@ export class BookService{
     getBookByID(id: string){
         return this.client.get("" + id)
     };
+<<<<<<< HEAD
 }
 
 
+=======
+}
+>>>>>>> dev

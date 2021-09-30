@@ -1,7 +1,6 @@
 import React from "react";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import "./App.css";
-import Footer from "./Footer";
 
 function Home() {
   return (
@@ -46,7 +45,6 @@ function Home() {
           </CarouselItem>
         </Carousel>
       </a>
-      <Footer />
     </div>
   );
 }

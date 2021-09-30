@@ -1,0 +1,61 @@
+.body {
+	background-color: #c6927a;
+	padding: 5%;
+}
+
+legend {
+	text-align: center;
+	font-size:xx-large;
+	display: block;
+	border: none;
+}
+
+fieldset {
+	display: block;
+	border-radius: 25px;
+	border: solid #250c00 3px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #e9c1a7;
+}
+
+.field {
+	width: 75%;
+	border-radius: 15px;
+	padding: 1%;
+}
+
+Form {
+	display: block;
+	text-align: center;
+}
+
+label {
+	padding-top: 5%;
+	font-size: large;
+	font-weight: 600;
+}
+
+.button-submit {
+	text-align: right;
+	padding: 5%;
+	float: right;
+	margin-right: 7%;
+}
+
+.sumbit {
+	border-radius: 15px;
+	background-color: #250c00;
+	color: #e9c1a7;
+}
+
+.error{
+	background-color:darkred;
+	border-radius: 15px;
+	color: white;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.5%;
+}

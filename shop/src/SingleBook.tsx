@@ -32,7 +32,7 @@ export const SingleBook = () => {
             <p>
               <b>Price: {book.price}</b>
             </p>
-            <div className="card-body" id="desc">
+            <div className="card-body-2">
               <p className="card-text">Description: {book.book_description}</p>
               <p className="card-text">Publisher: {book.publisher}</p>
             </div>
@@ -42,7 +42,6 @@ export const SingleBook = () => {
           </a>
         </div>
       </Card>
-      <Footer />
     </div>
   );
 };
