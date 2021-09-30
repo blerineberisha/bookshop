@@ -9,6 +9,10 @@ interface Values {
   email: string;
   password: string;
 }
+let lcNum = new RegExp("(?=.*[a-z])");
+let ucNum = new RegExp("(?=.*[A-Z])");
+let num = new RegExp("(?=.*[1-9])");
+
 const FormElement = () => {
   const SignupSchema = Yup.object().shape({
     firstName: Yup.string()
@@ -26,6 +30,9 @@ const FormElement = () => {
       .min(8, "Too short!")
       .max(50, "Too long!")
       .required("Please enter a password.")
+      .matches(lcNum, "Please include at least one lowercase letter.")
+      .matches(ucNum, "Please include at least one uppercase letter.")
+      .matches(num, "Please include at least one number."),
   });
 
   return (

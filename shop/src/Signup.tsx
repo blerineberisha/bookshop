@@ -3,7 +3,7 @@ import "./Form.css";
 import FormElement from "./Form";
 
 
-export default function Contact() {
+export default function Signup() {
     return (
         <div className="body">
             <FormElement />

@@ -7,8 +7,7 @@ export type BookType = {
   id: number;
   image: string;
   book_title: string;
-  author_firstName: string;
-  author_lastName: string;
+  author: string;
   book_description: string;
   price: string;
   publisher: string;
@@ -18,8 +17,7 @@ export const Book = ({
   id,
   image,
   book_title,
-  author_firstName,
-  author_lastName,
+  author,
   book_description,
   price,
   publisher,
@@ -27,11 +25,11 @@ export const Book = ({
   if (!id) return <div />;
   return (
     <div className="card-style">
-      <Card style={{ width: "22rem" }}>
+      <Card style={{ width: "15rem" }}>
         <Card.Img variant="top" src={image} className="card-img" />
         <Card.Body className="card-body">
           <Card.Title>
-            {book_title} by {author_firstName} {author_lastName}
+            {book_title} by {author}
           </Card.Title>
           <Card.Text>{book_description}</Card.Text>
         </Card.Body>

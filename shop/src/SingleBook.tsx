@@ -24,10 +24,9 @@ export const SingleBook = () => {
             src={book.image}
             alt="book"
             className="img"
-            style={{ width: "100px;" }}
           />
           <div className="card-body">
-            <h5 className="card-title">{book.book_title}</h5>
+            <h5 className="card-title">{book.book_title} by {book.author}</h5>
             <p>
               <b>Price: {book.price}</b>
             </p>

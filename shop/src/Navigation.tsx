@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 
 import AllBooks from "./AllBooks";
-import Contact from "./Contact";
+import Signup from "./Signup";
 import Home from "./Home";
 import { SingleBook } from "./SingleBook";
 function Navigation() {
@@ -13,7 +13,7 @@ function Navigation() {
       <Route path="/all" exact component={AllBooks}></Route>
       <Route path="/home" exact component={Home}></Route>
       <Route path="/book/:id" exact component={SingleBook}></Route>
-      <Route path="/contact" exact component={Contact}></Route>
+      <Route path="/signup" exact component={Signup}></Route>
     </BrowserRouter>
   );
 }

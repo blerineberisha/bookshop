@@ -10,8 +10,7 @@ export default function AllBooks() {
     id: number;
     image: string;
     book_title: string;
-    author_firstName: string;
-    author_lastName: string;
+    author: string;
     book_description: string;
     price: string;
     publisher: string;
@@ -42,15 +41,14 @@ export default function AllBooks() {
               })
               .map((book: BookType) => {
                 return (
-                  <Col md={4}>
+                  <Col md={3}>
                     <Book
                       id={book.id}
                       image={book.image}
                       book_title={book.book_title}
                       book_description={book.book_description}
                       price={book.price}
-                      author_firstName={book.author_firstName}
-                      author_lastName={book.author_lastName}
+                      author={book.author}
                       publisher={book.publisher}
                     />
                   </Col>

@@ -14,7 +14,7 @@ function Header() {
           <Nav.Link href="/all">All Books</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav.Link href="/signup">Signup</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">A surprise</Nav.Link>

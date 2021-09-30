@@ -41,13 +41,14 @@ label {
 	text-align: right;
 	padding: 5%;
 	float: right;
-	margin-right: 7%;
+	margin-right: 12%;
 }
 
 .sumbit {
 	border-radius: 15px;
 	background-color: #250c00;
 	color: #e9c1a7;
+	width: 150%;
 }
 
 .error{
