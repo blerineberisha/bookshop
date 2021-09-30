@@ -25,7 +25,7 @@ const FormElement = () => {
     password: Yup.string()
       .min(8, "Too short!")
       .max(50, "Too long!")
-      .required("Please enter a password."),
+      .required("Please enter a password.")
   });
 
   return (
@@ -47,7 +47,6 @@ const FormElement = () => {
           }, 500);
         }}
         validationSchema={SignupSchema}
-        validateOnBlur={false}
         validateOnChange={false}
       >
         {({ errors, touched }) => (
@@ -55,7 +54,7 @@ const FormElement = () => {
             <Form>
               <fieldset>
                 <legend>Sign up</legend>
-                <div>
+                <div className="inputLabel">
                   <label htmlFor="firstName">First Name</label>
                 </div>
                 <div>
@@ -69,7 +68,7 @@ const FormElement = () => {
                     <div className="error">{errors.firstName}</div>
                   )}
                 </div>
-                <div>
+                <div className="inputLabel">
                   <label htmlFor="lastName">Last Name</label>
                 </div>
                 <div>
@@ -83,7 +82,7 @@ const FormElement = () => {
                     <div className="error">{errors.lastName}</div>
                   )}
                 </div>
-                <div>
+                <div className="inputLabel">
                   <label htmlFor="email">Email</label>{" "}
                 </div>
                 <div>
@@ -97,7 +96,7 @@ const FormElement = () => {
                     <div className="error">{errors.email}</div>
                   )}
                 </div>
-                <div>
+                <div className="inputLabel">
                   <label htmlFor="password">Password</label>{" "}
                 </div>
                 <div>
