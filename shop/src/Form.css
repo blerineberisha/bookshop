@@ -18,7 +18,7 @@ fieldset {
 
 .field {
 	width: 75%;
-	border-radius: 10px;
+	border-radius: 15px;
 	padding: 1%;
 }
 
@@ -31,7 +31,7 @@ label {
 	padding-top: 5%;
 }
 
-.button {
+.button-submit {
 	text-align: right;
 	padding: 5%;
 	float: right;
@@ -39,7 +39,15 @@ label {
 }
 
 .sumbit {
-	border-radius: 10px;
+	border-radius: 15px;
 	background-color: #250c00;
 	color: #e9c1a7;
+}
+
+.error{
+	background-color:darkred;
+	color: white;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
 }
