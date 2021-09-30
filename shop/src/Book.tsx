@@ -20,7 +20,7 @@ export const Book = ({
   author,
   book_description,
   price,
-  publisher,
+  publisher
 }: BookType) => {
   if (!id) return <div />;
   return (

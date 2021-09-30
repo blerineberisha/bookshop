@@ -4,6 +4,7 @@
 }
 
 legend {
+	color: #633019;
 	text-align: center;
 	font-size:xx-large;
 	display: block;
@@ -13,7 +14,7 @@ legend {
 fieldset {
 	display: block;
 	border-radius: 25px;
-	border: solid #250c00 3px;
+	border: solid #633019 3px;
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
@@ -32,6 +33,7 @@ Form {
 }
 
 label {
+	color: #633019;
 	padding-top: 5%;
 	font-size: large;
 	font-weight: 600;
@@ -46,7 +48,7 @@ label {
 
 .sumbit {
 	border-radius: 15px;
-	background-color: #250c00;
+	background-color: #633019;
 	color: #e9c1a7;
 	width: 150%;
 }
@@ -66,7 +68,18 @@ label {
 	margin-left: 15%;
 }
 
-input:placeholder-shown {
+input:placeholder-shown, textarea:placeholder-shown {
 	font-style: italic;
-	color: black;
   }
+
+  input::after{
+	  color: #c6927a;
+  }
+
+  input{
+    color: #633019;
+}
+
+textarea{
+	height: 50%;
+}

@@ -17,6 +17,9 @@ function Header() {
           <Nav.Link href="/signup">Signup</Nav.Link>
         </Nav.Item>
         <Nav.Item>
+          <Nav.Link href="/add">Add book</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
           <Nav.Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">A surprise</Nav.Link>
         </Nav.Item>
         <Search />
