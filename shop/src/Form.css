@@ -60,3 +60,8 @@ label {
 	margin-right: auto;
 	padding: 0.5%;
 }
+
+.inputLabel{
+	text-align: left;
+	margin-left: 13%;
+}
