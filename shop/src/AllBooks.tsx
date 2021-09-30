@@ -2,12 +2,8 @@ import React, { useEffect, useState, useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Book, { BookType } from "./Book";
 import "./App.css";
-<<<<<<< HEAD
-import Footer from "./Footer";
-import { BookService } from "./BookService";
-=======
 import { SearchContext } from "./SearchContext";
->>>>>>> dev
+import { BookService } from "./BookService";
 
 export default function AllBooks() {
   type Book = {

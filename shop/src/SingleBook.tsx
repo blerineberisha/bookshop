@@ -3,7 +3,6 @@ import { Card, Button } from "react-bootstrap";
 import { BookType } from "./Book";
 import { useParams } from "react-router-dom";
 import "./App.css";
-import Footer from "./Footer";
 import { BookService } from "./BookService";
 
 export const SingleBook = () => {

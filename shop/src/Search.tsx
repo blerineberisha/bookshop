@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Form, FormControl } from "react-bootstrap";
 import { SearchContext } from "./SearchContext";
+
 export default function Search() {
   const { addSearch } = useContext(SearchContext);
   return (
