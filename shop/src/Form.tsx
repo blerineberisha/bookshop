@@ -121,14 +121,14 @@ const FormElement = () => {
                   className="field"
                   id="password"
                   name="password"
-                  placeholder="·····"
+                  placeholder="········"
                   required
                   type="password"
                   //validate={validateEmail}
                 />
               </div>
-              <div>
-                <button type="submit">Submit</button>
+              <div className="button">
+                <button type="submit" className="sumbit">Submit</button>
               </div>
             </fieldset>
           </Form>
