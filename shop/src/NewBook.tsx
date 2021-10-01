@@ -3,6 +3,9 @@ import * as React from "react";
 import { Formik, Field, Form, FormikHelpers } from "formik";
 import * as Yup from "yup";
 import "./Form.css";
+import { BookType } from "./Book";
+import { BookService } from "./BookService";
+
 
 interface Values {
   id: string;
@@ -15,9 +18,15 @@ interface Values {
 }
 
 const NewBook = () => {
+/*   const bookService = new BookService();
+  const handleSubmit = (values: BookType): void => {
+    bookService.addBook(values);
+    alert(JSON.stringify(values));
+  }; */
   const SignupSchema = Yup.object().shape({});
 
   return (
+
     <div className="body">
       <Formik
         initialValues={{
@@ -30,6 +39,7 @@ const NewBook = () => {
           publisher: "",
         }}
         onSubmit={(
+          
           values: Values,
           { setSubmitting }: FormikHelpers<Values>
         ) => {
@@ -40,6 +50,7 @@ const NewBook = () => {
         }}
         validationSchema={SignupSchema}
         validateOnChange={false}
+        
       >
         {({ errors, touched }) => (
           <div>
