@@ -7,7 +7,7 @@ import { BookService } from "./BookService";
 
 export default function AllBooks() {
   type Book = {
-    id: number;
+    id: string;
     image: string;
     book_title: string;
     author: string;

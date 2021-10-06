@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export type BookType = {
-  id: number;
+  id: string;
   image: string;
   book_title: string;
   author: string;

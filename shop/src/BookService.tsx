@@ -13,6 +13,6 @@ export class BookService {
   }
 
   addBook = (data: BookType) => {
-    return this.client.post("/books", data);
+    return this.client.post("/books" + data.id, data);
   };
 }
