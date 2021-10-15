@@ -1,20 +1,11 @@
-package com.example.bookShopBackend.book;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+package com.example.bookShopBackend.Book;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-@Service
 public class BookService {
     private BookRepository bookRepository;
     private AtomicInteger ai = new AtomicInteger(10000);
-
-    @Autowired
-    public BookService(BookRepository bookRepository){
-        this.bookRepository = bookRepository;
-    }
 
     public void deleteById(Integer id){
         this.bookRepository.deleteById(id);
