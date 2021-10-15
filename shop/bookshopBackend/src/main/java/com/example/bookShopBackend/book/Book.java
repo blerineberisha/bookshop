@@ -1,7 +1,9 @@
-package com.example.bookShopBackend.Book;
+package com.example.bookShopBackend.book;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
 public class Book {
     @Id
     private int id;
@@ -11,6 +13,20 @@ public class Book {
     private String book_description;
     private String price;
     private String publisher;
+
+    public Book(int id, String image, String book_title, String author, String book_description, String price, String publisher) {
+        this.id = id;
+        this.image = image;
+        this.book_title = book_title;
+        this.author = author;
+        this.book_description = book_description;
+        this.price = price;
+        this.publisher = publisher;
+    }
+
+    public Book() {
+
+    }
 
     public int getId() {
         return id;

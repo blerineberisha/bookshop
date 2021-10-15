@@ -1,14 +1,15 @@
-package com.example.bookShopBackend.Book;
+package com.example.bookShopBackend.book;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
+@RestController
 public class BookWeb {
     private BookService bookService;
-
+    @Autowired
     public BookWeb(BookService bookService) {
         this.bookService = bookService;
     }
