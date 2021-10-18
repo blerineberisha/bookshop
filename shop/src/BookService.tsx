@@ -2,7 +2,7 @@ import axios from "axios";
 import { BookType } from "./Book";
 
 export class BookService {
-  private client = axios.create({ baseURL: "http://localhost:3001" });
+  private client = axios.create({ baseURL: "http://localhost:8080" });
 
   getAllBooks() {
     return this.client.get("/books");

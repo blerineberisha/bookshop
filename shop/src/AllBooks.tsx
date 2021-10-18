@@ -1,30 +1,21 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Book, { BookType } from "./Book";
+import { Book, BookType } from "./Book";
 import "./App.css";
 import { SearchContext } from "./SearchContext";
 import { BookService } from "./BookService";
 
 export default function AllBooks() {
-  type Book = {
-    id: string;
-    image: string;
-    book_title: string;
-    author: string;
-    book_description: string;
-    price: string;
-    publisher: string;
-  };
-  const [books, setBook] = useState<Book[]>([]);
+
+  const [books, setBook] = useState<BookType[]>([]);
   const { search } = useContext(SearchContext);
 
-
-  useEffect(() => {
+  useEffect(()=>{
     const bookService = new BookService();
-    bookService.getAllBooks().then((res) => {
+    bookService.getAllBooks().then((res)=>{
       setBook(res.data);
     })
-  }, [books]);
+  })
 
   return (
     <div className="allbooks">

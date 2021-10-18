@@ -14,7 +14,7 @@ export const SingleBook = () => {
     bookService.getBookByID(id).then((res) => {
       setBook(res.data);
     })
-  }, [id]);
+  }, []);
 
   return (
     <div className="singlebook">

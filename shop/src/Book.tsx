@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export type BookType = {
-  id: string;
+  id: number;
   image: string;
   book_title: string;
   author: string;
@@ -46,5 +46,3 @@ export const Book = ({
     </div>
   );
 };
-
-export default Book;
