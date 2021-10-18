@@ -5,8 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-@CrossOrigin(origins = "http://localhost:3000/")
-@RequestMapping("/books")
+
 @RestController
 public class BookWeb {
     private BookService bookService;
@@ -15,7 +14,7 @@ public class BookWeb {
         this.bookService = bookService;
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public ResponseEntity<List<Book>> findAll() {
         List<Book> books = bookService.getAllBooks();
         return ResponseEntity.ok().body(books);
