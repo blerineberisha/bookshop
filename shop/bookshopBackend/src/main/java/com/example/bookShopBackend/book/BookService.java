@@ -28,7 +28,7 @@ public class BookService {
         return bookRepository.findAll();
     }
 
-    public Book updateBook(Book book, Integer id){
+    public Book updateBook(Book book, int id){
         book.setId(book.getId());
         book.setImage(book.getImage());
         book.setBook_title(book.getBook_title());

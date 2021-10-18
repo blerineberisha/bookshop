@@ -21,7 +21,7 @@ const NewBook = () => {
     <div className="body">
       <Formik
         initialValues={{
-          id: "",
+          id: 0,
           image: "",
           book_title: "",
           author: "",
