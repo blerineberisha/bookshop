@@ -39,5 +39,4 @@ public class BookService {
         final Book updatedBook = bookRepository.save(book);
         return updatedBook;
     }
-
 }
